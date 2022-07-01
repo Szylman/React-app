@@ -3,7 +3,6 @@ import styles from "./List.module.scss"
 import { useState } from "react";
 import shortid from "shortid";
 import ColumnForm from "../ColumnForm/ColumnForm";
-import Card from "../CartForm/CardForm";
 
 const List = () => {
 
@@ -60,7 +59,7 @@ const List = () => {
             </header>
             <p className={styles.description}>Interesting things I want to check out</p>
             <section className={styles.columns}>
-                {columns.map(column => <Column key={column.id} title={column.title} icon={column.icon} cards={column.cards} />)}
+                {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon} cards={column.cards} addCard={addCard} />)}
             </section>
             <ColumnForm action={addColumn}/>
         </div>
