@@ -24,7 +24,9 @@ const initialState = {
       { id: 4, columnId: 2, title: 'Interstellar' },
       { id: 5, columnId: 3, title: 'The Sims' },
       { id: 6, columnId: 3, title: 'Minecraft' }
-    ]
+    ],
+
+    searchString:'',
   
   };
   
