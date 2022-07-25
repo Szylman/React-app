@@ -40,12 +40,12 @@ const initialState = {
   ],
   
   cards: [
-    { id: 1, columnId: 1, title: 'The Bible' },
-    { id: 2, columnId: 1, title: 'Interpreter of Maladies' },
-    { id: 3, columnId: 2, title: 'Minions' },
-    { id: 4, columnId: 2, title: 'Interstellar' },
-    { id: 5, columnId: 3, title: 'The Sims' },
-    { id: 6, columnId: 3, title: 'Minecraft' }
+    { id: 1, columnId: 1, title: 'The Bible', isFavorite: false},
+    { id: 2, columnId: 1, title: 'Interpreter of Maladies', isFavorite: false },
+    { id: 3, columnId: 2, title: 'Minions', isFavorite: false },
+    { id: 4, columnId: 2, title: 'Interstellar', isFavorite: false },
+    { id: 5, columnId: 3, title: 'The Sims', isFavorite: false },
+    { id: 6, columnId: 3, title: 'Minecraft', isFavorite: false }
   ],
 
   searchString:'',
