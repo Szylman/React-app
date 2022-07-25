@@ -3,18 +3,17 @@ import { useState } from "react";
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
-import shortid from 'shortid';
-import { addColumn } from '../../redux/store';
+import { addColumn } from '../../redux/columnsRedux';
+
 
 const ColumnForm = props => {
     const dispatch = useDispatch();
     const [title, setTitle] = useState('');
     const [icon, setIcon] = useState('');
-    const id = shortid();
     const listId = props.listId;
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(addColumn({id, title, icon, listId}));
+        dispatch(addColumn({ title, icon, listId}));
         setTitle('');
         setIcon('');
     }

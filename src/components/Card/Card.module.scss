@@ -15,10 +15,14 @@
 button {
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: $color-light;
 }
   
 .isFavorite {
     color: goldenrod;
     transform: scale(120%);
+}
+
+.removeCard {
+    color: $color-warning;
 }
